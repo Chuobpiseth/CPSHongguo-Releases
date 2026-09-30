@@ -22,9 +22,14 @@ files supplied through unofficial mirrors.
 
 ## Update assets
 
-Future releases may include the Windows installer, `latest.yml`, a blockmap,
-SHA-256 checksums, and release notes. Source code is maintained separately in a
-private repository.
+Each published GitHub Release used by the in-app updater must contain:
+
+- `CPS-Hongguo-Downloader-update-<version>.zip`
+- `CPS-Hongguo-Downloader-update-<version>.zip.sha256`
+- Release notes
+
+Use a matching tag such as `v0.1.0`. The ZIP must contain the complete contents
+of Electron Builder's `win-unpacked` directory at its root. Source code is
+maintained separately in a private repository.
 
 Copyright © 2026 Chuob Piseth. All rights reserved.
-
